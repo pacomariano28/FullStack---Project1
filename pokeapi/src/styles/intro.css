@@ -1,0 +1,26 @@
+#intro{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	align-content: center;
+	animation: introFade 2.5s ease-out normal forwards;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@keyframes introFade {
+	0%
+	{
+		opacity: 1;
+		backdrop-filter: blur(10px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		backdrop-filter: blur(0px);
+	}
+}
